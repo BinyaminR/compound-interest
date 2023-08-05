@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compound Interest Result</title>
+    <style>
+        body {
+            background-image: url('/static/background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        #result {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 300px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="result">
+        <h1>Compound Interest Result</h1>
+        <p>Total Deposit Amount: {{ total_deposit-total_profit }}</p>
+        <p>Profit Due to Interest: {{ total_profit }}</p>
+        <p>Summary:</p>
+        <p>Total Deposit and Total Profit: {{ total_deposit }}</p>
+    </div>
+</body>
+</html>

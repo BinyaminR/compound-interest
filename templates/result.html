@@ -4,17 +4,21 @@
     <title>Compound Interest Result</title>
     <style>
         body {
-            background-image: url('/static/background.jpg');
+            background-image: url('https://images.moneycontrol.com/static-mcnews/2022/09/Savings-accounts-2-1-770x433.png?impolicy=website&width=770&height=431');
             background-size: cover;
             background-position: center;
             font-family: Arial, sans-serif;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         #result {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             width: 300px;
-            margin: 100px auto;
             border-radius: 10px;
         }
     </style>
@@ -22,10 +26,10 @@
 <body>
     <div id="result">
         <h1>Compound Interest Result</h1>
-        <p>Total Deposit Amount: {{ total_deposit-total_profit }}</p>
+        <p>Total Deposit Amount: {{ total_deposit }}</p>
         <p>Profit Due to Interest: {{ total_profit }}</p>
         <p>Summary:</p>
-        <p>Total Deposit and Total Profit: {{ total_deposit }}</p>
+        <p>Total Deposit and Total Profit: {{ total_deposit + total_profit }}</p>
     </div>
 </body>
 </html>
